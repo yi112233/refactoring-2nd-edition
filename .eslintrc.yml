@@ -1,16 +1,18 @@
 env:
   browser: true
   es2020: true
+  jest/globals: true
 extends:
   - standard
   - plugin:prettier/recommended
   - prettier/@typescript-eslint
-parser: '@typescript-eslint/parser'
+parser: "@typescript-eslint/parser"
 parserOptions:
   ecmaVersion: 11
   sourceType: module
 plugins:
-  - '@typescript-eslint'
+  - "@typescript-eslint"
   - prettier
-rules: 
+  - jest
+rules:
   prettier/prettier: error
